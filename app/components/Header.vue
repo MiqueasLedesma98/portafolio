@@ -4,7 +4,7 @@
       <ULink to="/">Miqueas Ledesma</ULink>
     </template>
 
-    <UNavigationMenu :items="items" />
+    <UNavigationMenu :items="items" @click="console.log" />
 
     <template #right>
       <UColorModeButton />
@@ -17,10 +17,9 @@
 import type { NavigationMenuItem } from '@nuxt/ui';
 
 const items = ref<NavigationMenuItem[]>([
-  { label: 'Contacto', to: '/contacto', },
-  { label: 'Proyectos', to: '/proyecto', },
   { label: 'Mi Stack', to: '/stack', },
+  { label: 'Proyectos', to: '/proyecto' },
+  { label: 'Contacto', to: '/contacto' },
 ])
-
 
 </script>
