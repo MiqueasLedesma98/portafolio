@@ -9,11 +9,11 @@
 
 
     <template #right>
-      <UButton icon="i-simple-icons-discord" color="neutral" variant="ghost" to="https://go.nuxt.com/discord"
-        target="_blank" aria-label="Discord" />
-      <UButton icon="i-simple-icons-x" color="neutral" variant="ghost" to="https://go.nuxt.com/x" target="_blank"
-        aria-label="X" />
-      <UButton icon="i-simple-icons-github" color="neutral" variant="ghost" to="https://github.com/nuxt/nuxt"
+      <UButton icon="i-simple-icons-instagram" color="neutral" variant="ghost"
+        to="https://www.instagram.com/miqueasledesma98" target="_blank" aria-label="instagram" />
+      <UButton icon="i-simple-icons-gitlab" color="neutral" variant="ghost" to="https://gitlab.com/miqueasledesmadev"
+        target="_blank" aria-label="X" />
+      <UButton icon="i-simple-icons-github" color="neutral" variant="ghost" to="https://github.com/MiqueasLedesma98"
         target="_blank" aria-label="GitHub" />
     </template>
 
@@ -27,7 +27,6 @@ const items: NavigationMenuItem[] = [
   {
     label: 'Contacto',
     to: '/contacto',
-    target: '_blank'
   }
 ];
 

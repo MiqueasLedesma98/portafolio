@@ -1,15 +1,18 @@
 <template>
-  <UHeader>
+  <UHeader mode="slideover">
     <template #title>
-      <ULink to="/">Miqueas Ledesma</ULink>
+      <ULink as="button" to="/">Miqueas Ledesma</ULink>
     </template>
 
-    <UNavigationMenu :items="items" @click="console.log" />
+    <UNavigationMenu :items="items" />
 
     <template #right>
       <UColorModeButton />
     </template>
 
+    <template #body>
+      <UNavigationMenu :items="items" orientation="vertical" class="-mx-2.5" />
+    </template>
   </UHeader>
 </template>
 
