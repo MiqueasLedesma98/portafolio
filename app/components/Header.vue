@@ -22,6 +22,7 @@ import type { NavigationMenuItem } from '@nuxt/ui';
 const items = ref<NavigationMenuItem[]>([
   { label: 'Mi Stack', to: '/stack', },
   { label: 'Proyectos', to: '/proyecto' },
+  { label: 'Experiencia', to: '/experiencia' },
   { label: 'Contacto', to: '/contacto' },
 ])
 

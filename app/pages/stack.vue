@@ -1,18 +1,16 @@
 <template>
   <UPage>
-    <UPageSection title="Frontend" description="Herramientas">
+    <UPageSection title="Frontend"
+      description="Desarrollo de interfaces modernas y experiencias de usuario excepcionales">
       <UPageGrid class="m-4">
         <UPageCard v-for="tech in front" :key="tech.title" v-bind="tech" spotlight spotlight-color="secondary" />
       </UPageGrid>
     </UPageSection>
-    <UPageSection title="Backend" description="Herramientas">
+    <UPageSection title="Backend" description="Arquitectura robusta, APIs escalables y gestión de datos eficiente">
       <UPageGrid class="m-4">
         <UPageCard v-for="tech in back" :key="tech.title" v-bind="tech" spotlight spotlight-color="primary" />
       </UPageGrid>
     </UPageSection>
-
-
-
   </UPage>
 </template>
 
