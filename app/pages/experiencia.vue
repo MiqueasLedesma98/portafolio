@@ -1,21 +1,7 @@
 <template>
   <UPage>
     <UPageSection>
-      <UChangelogVersions lang="es-ES" :versions="experiencias">
-        <template #date="props">
-          {{
-            typeof props.version.date === 'string'
-              ? 'Actualidad'
-              : (() => {
-                const text = props.version.date!.toLocaleString('es-ES', {
-                  month: 'short',
-                  year: 'numeric'
-                })
-                return text.charAt(0).toUpperCase() + text.slice(1)
-              })()
-          }}
-        </template>
-      </UChangelogVersions>
+      <UChangelogVersions lang="es-ES" :versions="experiencias" />
     </UPageSection>
   </UPage>
 </template>
@@ -30,7 +16,7 @@ const experiencias = ref<ChangelogVersionProps[]>([
     description: `Actualmente me encargo del desarrollo de nuevas funcionalidades y de resolver Bugs para un CRM de talleres utilizando React, React-Native, Express, Node, Nginx, MongoDB, Material UI. 
 Para organizarnos utilizamos Trello y Discord.`,
     badge: 'Full-Stack developer',
-    date: 'actual',
+    date: 'Actualidad',
     image: '/chrono.webp'
   },
   {
